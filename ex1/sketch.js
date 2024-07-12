@@ -184,6 +184,3 @@ function gotHands(results) {
   hands = results;
 }
 
-function keyPressed(){
-  saveGif("sp", 5);
-}
