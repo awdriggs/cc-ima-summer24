@@ -2,5 +2,5 @@
 awdriggs
 
 - [EX0](./ex0/self.html) - self portrait
-- [EX1](./ex1/self2.html) - self portrait with handpose
+- [EX1](./ex1/sp-pose.html) - self portrait with [ml5 handpose](https://docs.ml5js.org/#/reference/handpose)
 
