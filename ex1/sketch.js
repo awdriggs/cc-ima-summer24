@@ -1,4 +1,4 @@
-// global variables
+ global variables
 let gridSize, numCols, numRows;
 let debug = true;
 let cells = []; //empty array, will get filled with images

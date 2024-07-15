@@ -3,4 +3,6 @@ awdriggs
 
 - [EX0](./ex0/self.html) - self portrait
 - [EX1](./ex1/sp-pose.html) - self portrait with [ml5 handpose](https://docs.ml5js.org/#/reference/handpose)
+- [EX2](./ex2/growth-decay.html) - a game of life. 
+
 

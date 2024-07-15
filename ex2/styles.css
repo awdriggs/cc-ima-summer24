@@ -1,0 +1,9 @@
+html {
+  background-color: "black";
+}
+
+.p5Canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
