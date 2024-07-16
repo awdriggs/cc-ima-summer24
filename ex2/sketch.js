@@ -25,9 +25,6 @@ function setup() {
 
   //calculate cell geometry business
   numCols = 10; //hard coded
-  cellWidth = width/numCols;
-  cellHeight = cellWidth; //squre
-  numRows = floor(height/cellHeight);
 
   // Create the webcam video and hide it
   video = createCapture(VIDEO);
@@ -89,6 +86,13 @@ function gotHands(results) {
 }
 
 function seed() {
+  //flush the current cells
+  organisms = [];
+
+  cellWidth = width/numCols;
+  cellHeight = cellWidth; //squre
+  numRows = floor(height/cellHeight);
+
   //num rows and num cols
   for(let i = 0; i < numRows; i++){
     for(let j = 0; j < numCols; j++){
@@ -96,6 +100,11 @@ function seed() {
     }
   }
 }
+ 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  seed()
+} 
 
 //Cell Class
 function Cell(x, y, w, h) {
@@ -153,3 +162,7 @@ Cell.prototype.show = function() {
   rect(this.pos.x, this.pos.y, this.w, this.h);
 }
 
+ 
+// function keyPressed() {
+//   saveGif("growth-decay", 10)
+// }
