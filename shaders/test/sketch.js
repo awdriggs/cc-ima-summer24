@@ -4,7 +4,7 @@ let texcoordShader;
 
 function preload(){
   // load the shader
-  texcoordShader = loadShader('shader.vert', 'shader.frag');
+  texcoordShader = loadShader('shader.frag');
 }
 
 function setup() {
@@ -18,7 +18,7 @@ function draw() {
   shader(texcoordShader);
 
   // rect gives us some geometry on the screen
-  rect(0,0,width, height);
+  // rect(0,0,width, height);
 }
 
 function windowResized(){
