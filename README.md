@@ -6,7 +6,7 @@ awdriggs
 - [EX2](./ex2/growth-decay.html) - a game of life. 
 - [EX3](./ex3/warpVideo.html) - Using a shader warp a video. 
 - [EX4](./ex4/doubleNoiseClock.html) - a meditation on time. 
-- [EX5](./ex4/shadesofblue.html) - Shades of Blue - reading color from a remote sensor pointed at the sky. 
+- [EX5](./ex5/shadesofblue.html) - Shades of Blue - reading color from a remote sensor pointed at the sky. 
 
  
 
