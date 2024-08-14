@@ -26,7 +26,7 @@ function getReading() {
 function setup() {
   createCanvas(windowWidth, windowHeight);
   getReading();
-  noStroke();
+  // noStroke();
 }
 
 function draw() {
@@ -34,10 +34,11 @@ function draw() {
 
   if (readings.length > 0) {
     //only do this if there is a color to start with
-    let w = width / readings.length;
+    let w = round(width / readings.length);
  //   print(w);
     for (let i = 0; i < readings.length; i++) {
       fill(readings[i])
+      stroke(readings[i]);
       rect(i * w, 0, w, height);
     }
   }
